@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".map.MapFragment" android:orientation="vertical">
+
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                        app:cardBackgroundColor="@color/colorPrimary" app:cardCornerRadius="0dp">
+
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     style="@style/Widget.AppCompat.ActionButton.CloseMode" android:src="@drawable/ic_arrow_back_white_24dp"
+                     android:id="@+id/map_button_back"/>
+
+    </android.support.v7.widget.CardView>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/map_map"
+              class="com.here.android.mpa.mapping.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+
+</LinearLayout>

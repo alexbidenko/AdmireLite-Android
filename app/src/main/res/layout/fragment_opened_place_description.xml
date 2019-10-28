@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context=".places.fragments.OpenedPlaceDescriptionFragment">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <View android:layout_width="match_parent" android:layout_height=".5dp"
+              android:background="@android:color/darker_gray"/>
+
+        <com.nex3z.flowlayout.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opened_place_tags"
+                android:padding="2dp"
+                app:flChildSpacing="0dp"
+                app:flChildSpacingForLastRow="0dp"
+                app:flRowSpacing="0dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height=".5dp"
+              android:background="@android:color/darker_gray"/>
+
+        <RatingBar android:layout_width="wrap_content" android:layout_height="42dp"
+                   android:id="@+id/opened_place_rating" style="@style/Widget.AppCompat.RatingBar"
+                   android:scaleX=".6" android:scaleY=".6" android:layout_marginLeft="8dp"
+                   android:layout_marginTop="8dp" android:transformPivotX="0dp"
+                   android:transformPivotY="0dp" android:max="5"/>
+
+        <View android:layout_width="match_parent" android:layout_height="0.5dp"
+              android:background="@android:color/darker_gray"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="8dp" android:orientation="horizontal"
+                      android:id="@+id/opened_place_location_layout">
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_location_on_silver_24dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingTop="2dp" android:paddingLeft="4dp"
+                      android:text="@string/place_to_map"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="8dp" android:orientation="horizontal"
+                      android:id="@+id/opened_place_share_layout">
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_share_silver_24dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingTop="2dp" android:paddingLeft="4dp"
+                      android:text="@string/place_share"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="0.5dp"
+              android:background="@android:color/darker_gray"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание места"
+        android:id="@+id/opened_place_description"
+        android:textSize="14sp" android:padding="8dp"
+        android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent" android:layout_height="0.5dp"
+              android:background="@android:color/darker_gray"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/opened_place_images" android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>

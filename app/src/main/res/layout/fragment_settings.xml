@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".profile.SettingsFragment"
+android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="@color/colorPrimary" android:text="@string/app_name"
+              android:textColor="@android:color/white" android:textSize="24sp"
+              android:padding="8dp" android:elevation="8dp" android:translationZ="8dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical" android:padding="8dp"
+                  android:id="@+id/settings_sing_in">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/settings_sing_in" android:textSize="16sp"
+                  android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:padding="8dp"
+                  android:id="@+id/settings_in_profile_layout" android:visibility="gone">
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                   android:id="@+id/settings_profile_avatar"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/settings_profile_name" android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height=".5dp"
+          android:background="@android:color/darker_gray"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="8dp"
+    android:id="@+id/settings_change_region">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/settings_change_city" android:textSize="16sp"
+        android:textStyle="bold"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Новороссийск" android:id="@+id/settings_change_region_city"/>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height=".5dp"
+          android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_follow_location"
+                android:textSize="16sp" android:textStyle="bold"/>
+
+        <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:id="@+id/settings_change_follow_location"/>
+
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent" android:layout_height=".5dp"
+          android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

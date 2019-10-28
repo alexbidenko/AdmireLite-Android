@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".profile.ProfileFragment"
+android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary" android:elevation="8dp"
+                    android:translationZ="8dp">
+
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     style="@style/Widget.AppCompat.ActionButton.CloseMode" android:src="@drawable/ic_arrow_back_white_24dp"
+                     android:id="@+id/profile_button_back"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="220dp">
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/profile_avatar"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" android:layout_marginBottom="0dp"
+        android:id="@+id/profile_name" android:textSize="22sp"
+        android:textColor="@android:color/white" android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="8dp">
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_silver_24dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Новороссийск" android:padding="3dp" android:id="@+id/profile_city"/>
+
+    </LinearLayout>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/profile_sing_out_button" style="@style/Widget.AppCompat.Button.Borderless"
+    android:text="@string/profile_sing_out"/>
+
+</LinearLayout>

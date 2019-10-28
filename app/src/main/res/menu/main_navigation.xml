@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/main_navigation_places"
+            android:icon="@drawable/ic_local_see_24dp"
+            android:title="@string/title_places"/>
+
+    <item
+            android:id="@+id/main_navigation_events"
+            android:icon="@drawable/ic_event_24dp"
+            android:title="@string/title_events"/>
+
+    <item
+            android:id="@+id/main_navigation_map"
+            android:icon="@drawable/ic_map_24dp"
+            android:title="@string/title_map"/>
+
+    <item
+            android:id="@+id/main_navigation_profile"
+            android:icon="@drawable/ic_account_circle_24dp"
+            android:title="@string/title_profile"/>
+
+</menu>

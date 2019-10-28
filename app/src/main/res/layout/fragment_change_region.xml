@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".profile.ChangeRegionFragment"
+android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="@color/colorPrimary" android:text="@string/app_name"
+              android:textColor="@android:color/white" android:textSize="24sp"
+              android:padding="8dp" android:id="@+id/change_region_title_text"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/change_region_title_button" android:visibility="gone">
+
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     style="@style/Widget.AppCompat.ActionButton.CloseMode" android:src="@drawable/ic_arrow_back_white_24dp"
+                     android:id="@+id/change_region_button_back"/>
+
+    </RelativeLayout>
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:textSize="24sp" android:hint="@string/change_region_hint"
+    android:id="@+id/change_region_input" android:lines="1"
+              android:maxLines="1"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:id="@+id/change_region_cities_layout"/>
+
+    </ScrollView>
+
+</LinearLayout>

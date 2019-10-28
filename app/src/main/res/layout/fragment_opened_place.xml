@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context=".places.fragments.OpenedPlaceFragment">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ActionButton.CloseMode" android:src="@drawable/ic_arrow_back_white_24dp"
+        android:id="@+id/opened_place_button_back"/>
+
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/opened_place_scroll_view" android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="140dp">
+
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                           tools:srcCompat="@tools:sample/backgrounds/scenic"
+                           android:scaleType="centerCrop"
+                           android:id="@+id/opened_place_avatar"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Название места" android:layout_marginBottom="0dp"
+                          android:layout_alignParentBottom="true" android:textColor="@android:color/white"
+                android:textSize="24sp" android:padding="8dp" android:id="@+id/opened_place_title"
+                          android:shadowColor="@android:color/darker_gray" android:shadowDx="1"
+                          android:shadowDy="1" android:shadowRadius="2"/>
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+            android:id="@+id/opened_place_view_pager">
+
+                <android.support.design.widget.TabLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/opened_place_view_pager_tab"/>
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
